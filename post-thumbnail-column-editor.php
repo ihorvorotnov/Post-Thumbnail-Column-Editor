@@ -42,3 +42,16 @@ function ptce_uninstall() {
 
 }
 register_uninstall_hook ( __FILE__, 'ptce_uninstall' );
+
+/**
+ * Add post column
+ * @param  array $columns Array of current columns
+ * @return array          Updated array with new column appended
+ */
+function ptce_add_thumb_column( $columns ) {
+	return array_merge(
+		$columns,
+		array( 'post_thumbnail_column' => __( '<span class="dashicons dashicons-format-image"></span>', 'post_thumbnail_column' ) )
+	);
+}
+add_filter( 'manage_posts_columns' , 'ptce_add_thumb_column' );

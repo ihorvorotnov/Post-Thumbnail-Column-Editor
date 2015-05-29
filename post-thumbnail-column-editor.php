@@ -18,3 +18,27 @@ Text Domain: post-thumbnail-column
 if ( ! defined( 'WPINC' ) ) {
 	die;
 }
+
+/**
+ * Activate plugin
+ */
+function ptc_install() {
+
+}
+register_activation_hook( __FILE__, 'ptc_install' );
+
+/**
+ * Deactivate plugin
+ */
+function ptc_deactivation() {
+
+}
+register_deactivation_hook( __FILE__, 'ptc_deactivation' );
+
+/**
+ * Uninstall plugin
+ */
+function ptc_uninstall() {
+
+}
+register_uninstall_hook ( __FILE__, 'ptc_uninstall' );

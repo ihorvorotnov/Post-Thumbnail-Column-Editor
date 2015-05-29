@@ -9,7 +9,7 @@ Author URI:  http://ihorvorotnov.com
 License:     GPL2
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Domain Path: /languages
-Text Domain: post-thumbnail-column
+Text Domain: ptce
 */
 
 /**
@@ -22,23 +22,23 @@ if ( ! defined( 'WPINC' ) ) {
 /**
  * Activate plugin
  */
-function ptc_install() {
+function ptce_install() {
 
 }
-register_activation_hook( __FILE__, 'ptc_install' );
+register_activation_hook( __FILE__, 'ptce_install' );
 
 /**
  * Deactivate plugin
  */
-function ptc_deactivation() {
+function ptce_deactivation() {
 
 }
-register_deactivation_hook( __FILE__, 'ptc_deactivation' );
+register_deactivation_hook( __FILE__, 'ptce_deactivation' );
 
 /**
  * Uninstall plugin
  */
-function ptc_uninstall() {
+function ptce_uninstall() {
 
 }
-register_uninstall_hook ( __FILE__, 'ptc_uninstall' );
+register_uninstall_hook ( __FILE__, 'ptce_uninstall' );

@@ -55,3 +55,19 @@ function ptce_add_thumb_column( $columns ) {
 	);
 }
 add_filter( 'manage_posts_columns' , 'ptce_add_thumb_column' );
+
+/**
+ * Add linked icons to columns
+ * @param  string $column  Current column name
+ * @param  int    $post_id The ID of current post
+ */
+function ptce_render_thumb_column( $column, $post_id ) {
+	if ( 'post_thumbnail_column' == $column ) {
+		if ( has_post_thumbnail() ) {
+			echo '<a href="#"><span class="dashicons dashicons-edit"></span></a>';
+		} else {
+			echo '<a href="#"><span class="dashicons dashicons-plus"></span></a>';
+		}
+	}
+}
+add_action( 'manage_posts_custom_column' , 'ptce_render_thumb_column', 10, 2 );

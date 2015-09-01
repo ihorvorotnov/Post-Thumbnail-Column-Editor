@@ -1,6 +1,6 @@
 # Post Thumbnail Column Editor
 
-A lightweight WordPress plugin to manage you post and custom post type thumbnails from post listing screen.
+A lightweight WordPress plugin to manage your post and custom post type thumbnails from post listing screen.
 
 **Work in progress**.
 
@@ -14,7 +14,7 @@ A lightweight WordPress plugin to manage you post and custom post type thumbnail
 - Add clickable actions (try to utilize native WP functions and pop-up, much like on the post edit page)
 	- "view / edit" if there's a post thumbnail
 	- "add" if there's no post thumbnail
-- Make those actions actually save eny changes (add or replace post thumbnail)
+- Make those actions actually save any changes (add or replace post thumbnail)
 - Add screenshots
 - Review the `readme.txt` for WP.org plugin repository
 
